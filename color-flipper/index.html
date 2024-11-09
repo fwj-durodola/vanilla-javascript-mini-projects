@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Lucida Console", Monaco, monospace;
+      }
+
+      body {
+        width: 100%;
+        background-color: red;
+        padding: 0 1rem;
+        color: #373332;
+
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        max-width: 50rem;
+        width: 100%;
+        text-align: center;
+        padding: 3.5rem 0;
+        border-radius: 1rem;
+        background-color: #ffcdd2;
+        border: 2px solid #808080;
+        margin-top: 3rem;
+      }
+
+      h3 {
+        font-size: clamp(1.6rem, 2vw + 1rem, 2.5rem);
+      }
+
+      button {
+        font-size: 1.5rem;
+        padding: 0.7rem 1.5rem;
+        border: 0;
+        outline: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 2rem;
+        font-weight: 600;
+        background-color: #373332;
+        color: #e2e2e2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3 id="header-title">
+        Background Color : <span id="color-value">#fff</span>
+      </h3>
+      <button id="change-color-btn">Change Color</button>
+    </div>
+  </body>
+</html>
